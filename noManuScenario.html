@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset=utf-8>
+
+    <title>Scenarios Example</title>
+    <!-- jQuery START-->
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="vendors/jquery.timepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/jquery-ui.css">
+    <!--<link rel="stylesheet" type="text/css" href="vendors/jquery-ui-slider-pips.css">-->
+    <!-- JavaScript-->
+    <script type="text/javascript" src="vendors/jquery.js"></script>
+    <script type="text/javascript" src="vendors/jquery-ui.js"></script>
+    <!--<script type="text/javascript" src="vendors/jquery-ui-slider-pips.js"></script>-->
+    <script type="text/javascript" src="vendors/jquery.selectBoxIt.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery.timepicker.min.js"></script>
+    <!-- jQuery END -->
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="resources/css/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/default.css" />
+    <!--<link rel="stylesheet" type="text/css" href="resources/css/slider.css" />-->
+    <!-- Json Data files -->
+    <script type="text/javascript" src="resources/data/lead_character.json"></script>
+    <script type="text/javascript" src="resources/data/exclude_character.json"></script>
+    <!-- JavaScript-->
+    <script type="text/javascript" src="resources/js/cookies.js"></script>
+    <script type="text/javascript" src="resources/js/noManuScenario.js"></script>
+    <!--<script type="text/javascript" src="resources/js/slider.js"></script>-->
+
+</head>
+
+<body>
+
+
+<table width="700" border="0" cellpadding="20" bgcolor="#FFFFEE">
+    <tr>
+        <td>
+            <nav style="float: right;"> <a href="https://www.youtube.com/watch?v=kC8YIWGlE6k" target="_blank">Watch video again</a> | <a href="textinstructions.html" target="_blank">View video script as text</a></nav>
+            <br><nav style="float: right;"> (both open in a new tab) </nav>
+            <script>
+                document.write ('<h1>Scenario #' + x + '</h1>');
+            </script>
+            <hr />
+
+            <nump1> <div id="container"></div></nump1>
+            <br /><br /><hr />
+            <p>
+            <form id="target">
+                <input id="btnNext" class="btnNext" name="btnSubmit" type="submit" onclick=" return nextScenario()" value="Next" style="float: right;" />
+            </form>
+
+            </p></td>
+    </tr>
+</table>
+
+
+<table id="table2" width="700" border="0" cellpadding="20" >
+    <tr>
+        <td>
+            <p>
+            <form id="dynmaicform"/>
+            </p>
+        </td>
+    </tr>
+</table>
+<p><img src="resources/images/TUDelft_350.png" width="80" height="38" /></p>
+</body>
+</html>

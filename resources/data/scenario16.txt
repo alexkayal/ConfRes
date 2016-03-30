@@ -1,0 +1,5 @@
+Jason is an 8 years old child. Lisa is his mother.  <br> <br>
+
+Lisa wants Jason’s grades at school to improve. But Jason is easily distracted by all the notifications on his smart phone during the time where he’s supposed to do his homework (between 4:30pm and 6pm). <br> <br> 
+
+You are <u>Lisa</u>. Use the menu below to construct an agreement to ensure that Jason does not receive notifications from anybody during the time where he’s supposed to do his homework.

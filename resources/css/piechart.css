@@ -1,0 +1,27 @@
+/*#holder {*/
+    /*display: inline-block;*/
+    /*height: 360px;*/
+    /*left: 83px;*/
+    /*margin: -200px 0 0 -200px;*/
+    /*padding: 158px 0 0 160px;*/
+    /*position: relative;*/
+    /*top: 60px;*/
+    /*width: 360px;*/
+/*}*/
+
+#holder {
+    z-index: 1;
+    display: inline-block;
+    height: 370px;
+    left: 83px;
+    margin: -35px 0 0 -200px;
+    padding: 0px 0 0 75px;
+    position: relative;
+    top: 5px;
+    width: 360px;
+}
+
+#resetPie {
+    position: relative;
+    z-index: 2;
+}

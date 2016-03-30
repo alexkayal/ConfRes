@@ -1,0 +1,1 @@
+<nump1 id="pieChartTextTest">Please indicate how much the agreement above supports each of the human values in the pie chart, within the context of the scenario and from the perspective of </nump1>

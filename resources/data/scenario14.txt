@@ -1,0 +1,5 @@
+Mary and Jason are both 8 years old children.  <br> <br>
+
+Mary does not want to bother Jason with too many notifications. For example, Mary is going on a school trip (between 11am and 4pm) and she is going to check-in at every place they visit. <br> <br> 
+
+You are <u>Mary</u>. Use the menu below to construct an agreement to ensure that Jason is not notified of your location during that trip.

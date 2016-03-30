@@ -1,0 +1,18 @@
+var thirdParty = [
+{"scenario":"1", "me":["paul"], "family":["paul", "jane", "mike"], "friends":["jason", "claire"], "others":["lisa", "peter"]},
+{"scenario":"2", "me":["jason"], "family":["paul", "jane", "mike"], "friends":["jason", "claire"], "others":["lisa", "peter"]},
+{"scenario":"3", "me":["mike"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"4", "me":["peter"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"5", "me":["lisa"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"6", "me":["mary"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"7", "me":["peter"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"8", "me":["mary"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"9", "me":["jason"], "family":["paul", "jane", "mike"], "friends":["jason", "claire"], "others":["lisa", "peter"]},
+{"scenario":"10", "me":["paul"], "family":["paul", "jane", "mike"], "friends":["jason", "claire"], "others":["lisa", "peter"]},
+{"scenario":"11", "me":["mike"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"12", "me":["peter"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"13", "me":["mary"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"14", "me":["mary"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"15", "me":["peter"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+{"scenario":"16", "me":["lisa"], "family":["peter", "lisa", "claire"], "friends":["mary", "mike"], "others":["paul", "jane"]},
+];

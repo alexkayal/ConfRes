@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset=utf-8>
+
+    <title>Scenarios Example</title>
+    <!-- jQuery START-->
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="vendors/jquery.timepicker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="vendors/jquery-ui-slider-pips.css">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="resources/css/dropdown.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/piechart.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/slider.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/legend.css"/>
+
+    <!-- JavaScript-->
+    <script type="text/javascript" src="vendors/jquery.js"></script>
+    <script type="text/javascript" src="vendors/jquery-ui.js"></script>
+    <script type="text/javascript" src="vendors/jquery-ui-slider-pips.js"></script>
+    <script type="text/javascript" src="vendors/jquery.selectBoxIt.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery.timepicker.min.js"></script>
+    <!-- jQuery END -->
+
+
+    <!-- Json Data files -->
+    <script type="text/javascript" src="resources/data/lead_character.json"></script>
+    <script type="text/javascript" src="resources/data/exclude_character.json"></script>
+    <script type="text/javascript" src="resources/data/third_party.json"></script>
+    <!-- JavaScript-->
+    <script type="text/javascript" src="resources/js/cookies.js"></script>
+    <script type="text/javascript" src="resources/js/conflictdetection.js"></script>
+    <script type="text/javascript" src="resources/js/scenario.js"></script>
+    <script type="text/javascript" src="resources/js/slider.js"></script>
+
+    <script type="text/javascript" src="vendors/raphael-min.js"></script>
+    <script type="text/javascript" src="resources/js/piechart.js"></script>
+
+</head>
+
+<body>
+
+
+<table width="700" border="0" cellpadding="20" bgcolor="#FFFFEE">
+    <tr>
+        <td>
+            
+            <script>
+                document.write('<h1>Scenario #' + x + '</h1>');
+            </script>
+            <hr/>
+
+            <nump1>
+                <div id="scenarioText"></div>
+            </nump1>
+            <br/><br/>
+            <hr/>
+            <p>
+
+            <form id="target">
+                <nump id="text1"> I want</nump>
+                <nump id="spinner1nump">
+                    <select name="spinner1" id="spinner1">
+                        <option value="select">Select...</option>
+                        <option value="paul">Paul</option>
+                        <option value="mary">Mary</option>
+                        <option value="jason">Jason</option>
+                        <option value="lisa">Lisa</option>
+                        <option value="peter">Peter</option>
+                        <option value="jane">Jane</option>
+                        <option value="mike">Mike</option>
+                        <option value="claire">Claire</option>
+                        -->
+                    </select>
+                </nump>
+                <nump id="text2"> to</nump>
+                <select name="spinner2" id="spinner2">
+                    <option value="select">Select...</option>
+                    <option value="share">share</option>
+                    <option value="not share">not share</option>
+                    <option value="receive">receive</option>
+                    <option value="not receive">not receive</option>
+                </select>
+                <nump id="text3"> check-ins</nump>
+                <br><br>
+                <nump id="with"> with</nump>
+                <nump id="spinner3nump">
+                    <select name="spinner3" id="spinner3">
+                        <option value="select">Select...</option>
+                        <option value="me">me</option>
+                        <option value="paul">Paul</option>
+                        <option value="mary">Mary</option>
+                        <option value="jason">Jason</option>
+                        <option value="lisa">Lisa</option>
+                        <option value="peter">Peter</option>
+                        <option value="jane">Jane</option>
+                        <option value="mike">Mike</option>
+                        <option value="claire">Claire</option>
+                        <option value="family">family</option>
+                        <option value="friends">friends</option>
+                        <option value="others">others</option>
+                        <option value="everyone">everyone</option>
+                    </select>
+                </nump>
+                <nump id="timePlace"> if</nump>
+
+                <nump id="spinnerTimePicker">
+                    <select name="spinner4" id="spinner4">
+                        <option value="select">Select...</option>
+                        <option value="share">Time</option>
+                        <option value="not share">Place</option>
+                    </select>
+                </nump>
+                <nump id="timepicker1"></nump>
+                <nump id="and"></nump>
+                <nump id="timepicker2"></nump>
+
+                <input id="switchTimePlace" hidden="true" class="switchTimePlace" name="btnSwitch" type="button"
+                       onclick="switchTimePlaceValue(this)" value="Time"/>
+                <br><br>
+                <input id="btnNext" class="btnNext" name="btnSubmit" type="submit" onclick=" return nextScenario()"
+                       value="Next" style="float: right;"/>
+
+            </form>
+
+            </p></td>
+    </tr>
+</table>
+
+
+<table id="table2" width="700" border="0" cellpadding="20" style="display: none; background-color: #FFFFEE">
+    <tr>
+        <td>
+            <form id="dynmaicform">
+                <table>
+                    <tr>
+                        <td>
+                            <br><nump1> <div id='txtqualitycontrol'></div></nump1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br><input type='text' id='qccontrolvalue' style='font-size:20px' size='40'  placeholder='enter the answer here'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="piechartScenarioText" style="margin-top: 25px">
+                                <script>
+                                    var pileNumber = getCookie("scenarioPair");
+                                    if(pileNumber === "1"){
+                                        $("#piechartScenarioText").load("resources/data/piechartScenarioPileA.txt");
+                                    }else{
+                                        $("#piechartScenarioText").load("resources/data/piechartScenarioPileB.txt");
+                                    }
+                                </script>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id='holder' class='pieHolder'></div>
+                            <input type="button" id="resetPie" value="Reset" onclick="resetChart();"/>
+                        </td>
+                        <td style="width: 45%">
+                            <div id="legend" class='my-legend'>
+                                <div class='legend-title'>Legend</div>
+                                <div class='legend-scale'>
+                                    <ul class='legend-labels' style="text-align: justify">
+                                        <nav><li><span style='background:#000000;'></span><b>Friendship:</b> for you, or your family members to build friendships, a social life, and be recognized amongst others in the social circle.</li>
+                                        <li><span style='background:#CCCCCC;'></span><b>Privacy:</b> for you, or your family members to be free from unwanted outside intrusion, and undesirably shared information.</li>
+                                        <li><span style='background:#0000FF;'></span><b>Safety:</b> for you, or your family members to be free from dangers or harm.
+</li>
+                                        <li><span style='background:#FFFF00;'></span><b>Independence:</b> for you, or your family members to be capable of doing what they need to do without other's control or support.
+</li>
+                                        <li><span style='background:#A52A2A;'></span><b>Responsibility:</b> for you, or your family members to know and be able to do the tasks they're expected to do.</li></nav>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <div>
+                            <input type='submit' id='submitbutton' onClick='return submitScenario()' value='Submit' style='float: right'/>
+                        </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+<p><img src="resources/images/TUDelft_350.png" width="80" height="38"/></p>
+</body>
+</html>

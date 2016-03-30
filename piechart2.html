@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="vendors/raphael-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/piechart.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/legend.css"/>
+    <script type="text/javascript" src="vendors/jquery.js"></script>
+    <script type="text/javascript" src="resources/js/piechart.js"></script>
+    <script type="text/javascript" src="resources/js/cookies.js"></script>
+
+</head>
+<body>
+<table width="700" border="0" cellpadding="20" bgcolor="#FFFFEE">
+    <tr>
+        <td colspan="2">
+                <h2>Enter your preferences</h2>
+				<div id="piechart2Text">
+                    <script>
+                        var pileNumber = getCookie("scenarioPair");
+                        if(pileNumber === "1"){
+                            $("#piechart2Text").load("resources/data/piechart2PileA.txt");
+                        }else{
+                            $("#piechart2Text").load("resources/data/piechart2PileB.txt");
+                        }
+                    </script>
+                </div>
+        </td>
+        </tr>
+    <tr>
+        <td>
+            <div id="holder" class="pieHolder"></div>
+            <input type="button" id="resetPie" value="Reset" onclick="resetChart();"/>
+        </td>
+        <td style="width: 45%">
+            <div id="legend" class='my-legend'>
+                <div class='legend-title'>Legend</div>
+                <div class='legend-scale'>
+                    <ul class='legend-labels'>
+                        <nav><li><span style='background:#000000;'></span><b>Friendship:</b> for you, or your family members to build friendships, a social life, and be recognized amongst others in the social circle.</li>
+                        <li><span style='background:#CCCCCC;'></span><b>Privacy:</b> for you, or your family members to be free from unwanted outside intrusion, and undesirably shared information.</li>
+                        <li><span style='background:#0000FF;'></span><b>Safety:</b> for you, or your family members to be free from dangers or harm.</li>
+                        <li><span style='background:#FFFF00;'></span><b>Independence:</b> for you, or your family members to be capable of doing what they need to do without other's control or support.</li>
+                        <li><span style='background:#A52A2A;'></span><b>Responsibility:</b> for you, or your family members to know and be able to do the tasks they're expected to do.</li></nav>
+                    </ul>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <form id="piecharForm">
+                <input id="btnNext" name="btnSubmit" type="submit" onclick="return submitPie('chart2')" value="Submit"
+                       style="float: right;"/>
+            </form>
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>

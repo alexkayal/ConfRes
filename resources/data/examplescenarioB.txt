@@ -1,0 +1,7 @@
+<b><i>This is an example scenario for you to practice. Your answers here will not be recorded, and the real tasks will start after this one.</b></i> <br><br>
+
+Mary and Mike are both 8 years old children. <br> <br>
+
+Mary is going to the park, and Mike wants to find out when she arrives there. <br> <br> 
+
+You are <u>Mike</u>. Use the menu below to construct an agreement to find out when Mary arrives at the park.

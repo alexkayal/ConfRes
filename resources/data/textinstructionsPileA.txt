@@ -1,0 +1,28 @@
+You are participating in an experiment for research purposes.
+
+The experiment is about creating agreements for sharing location.
+
+This experiment is divided into several parts, and takes approximately 20 minutes to complete.
+
+In each part, a number of scenarios will be displayed, regarding a family life situation.
+
+It is assumed that the characters in the scenario are in possession of a mobile device with a location sharing app. 
+
+With that app, one can check-in at certain locations, share that check-in with others, and make agreements with other people.
+
+Each scenario stops at a specific problem. 
+
+In these scenarios you assume the role of a parent, where your task is to construct an agreement, attempting to solve that problem, using a menu just like the agreement menu of the app. 
+
+Every time you create an agreement, you will be asked to indicate, from the perspective of your character in the scenario, how you believe the agreement supports specific human values.
+
+The scenarios have been designed so that sometimes, conflicts between agreements will occur.
+
+Of course, a system may not be able to comply with all agreements at the same time. 
+
+For this reason you will be asked, from the perspective of your character in the scenario, to indicate how much you favor one agreement over the other.
+
+When you are ready, please click the start button. By doing so, you agree to our terms and conditions, which you can view beforehand. 
+
+After that, you will be shown one example task page to help you practice. This will not count in the experiment.
+

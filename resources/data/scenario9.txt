@@ -1,0 +1,5 @@
+Mary and Jason are both 8 years old children.  <br> <br>
+
+Mary lives next door, and Jason does not want to be informed every time Mary comes home. <br> <br>
+
+You are <u>Jason</u>. Use the menu below to construct an agreement to ensure that Mary does not notify you when she arrives home.

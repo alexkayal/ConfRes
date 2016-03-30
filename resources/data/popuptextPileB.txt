@@ -1,0 +1,1 @@
+If a conflict occurs, the system must make a choice and comply with only one of the two. Please use the slider below to indicate, from the perspective of <leadChar id="leadCharPopup"></leadChar>, how much you favor one agreement over the other.
